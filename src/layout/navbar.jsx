@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button";
-import { Menu, X } from "lucide-react";
+import { Menu, X,ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navLinks = [
@@ -51,12 +51,6 @@ export const Navbar = () => {
             ))}
           </div>
         </div>
-
-        {/* CTA Button */}
-        <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
-        </div>
-
         {/* Mobile Menu Button */}
         <button
           className="md:hidden p-2 text-foreground cursor-pointer"
@@ -82,7 +76,7 @@ export const Navbar = () => {
             ))}
 
             <Button onClick={() => setIsMobileMenuOpen(false)}>
-              Contact Me
+              Contact Me <ArrowRight className="w-5 h-5 ml-2"/>
             </Button>
           </div>
         </div>

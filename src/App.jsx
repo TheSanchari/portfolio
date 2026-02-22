@@ -2,7 +2,9 @@
 import {Hero} from "@/sections/Hero";
 import {About} from "@/sections/About";
 import {Projects} from "@/sections/Projects";
+import {Testimonials} from "@/sections/Testimonials";
 import {Navbar} from "@/layout/navbar";
+
 import { useState } from 'react'
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +16,7 @@ function App() {
       <Hero></Hero>
       <About></About>
       <Projects></Projects>
+      <Testimonials> </Testimonials>
     </main>
   </div>
   )
